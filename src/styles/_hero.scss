@@ -1,0 +1,90 @@
+@mixin expand {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.jk-aspect-ratio-target {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 50%;
+  }
+}
+
+.jk-aspect-ratio-outlet {
+  @include expand;
+}
+
+
+.jk-hero {
+  &-image {
+    @include expand;
+
+    align-items: center;
+    background-image: url('/assets/photos/cover.jpg');
+    background-position: 50% 0%;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &-box {
+    color: white;
+    display: block;
+    line-height: 1;
+
+    &-info {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-transform: uppercase;
+
+      &-item {
+        font-family: proxima-nova-condensed, sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+
+    &-names {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-joshua,
+      &-kaitlin {
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-family: linotype-didot-headline, serif;
+      }
+
+      &-and {
+        font-family: beloved-script, sans-serif;
+        font-size: 4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    &-cta {
+      padding-top: .5rem;
+      width: 100%;
+
+      &-link {
+        background-color: white;
+        color: black;
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

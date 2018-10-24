@@ -1,0 +1,12 @@
+@keyframes app-shell-loader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app-shell {
+  animation: app-shell-loader 2s ease-in 0s 1 normal forwards;
+}
