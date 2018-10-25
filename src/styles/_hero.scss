@@ -20,7 +20,6 @@
   @include expand;
 }
 
-
 .jk-hero {
   &-image {
     @include expand;
@@ -38,6 +37,8 @@
     color: white;
     display: block;
     line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 
     &-info {
       align-items: center;
@@ -48,7 +49,16 @@
 
       &-item {
         font-family: proxima-nova-condensed, sans-serif;
-        font-size: 1.5rem;
+        font-size: .8rem;
+        margin-bottom: .125rem;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -57,33 +67,66 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-bottom: .25rem;
 
       &-joshua,
       &-kaitlin {
-        font-size: 5rem;
+        font-size: 1.875rem;
         text-transform: uppercase;
         font-family: linotype-didot-headline, serif;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 3rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 4.5rem;
+        }
       }
 
       &-and {
         font-family: beloved-script, sans-serif;
-        font-size: 4rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        font-size: 1.5rem;
+        margin-left: .25rem;
+        margin-right: .25rem;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 2.5rem;
+          margin-left: .5rem;
+          margin-right: .5rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 3.5rem;
+          margin-left: .75rem;
+          margin-right: .75rem;
+        }
       }
     }
 
     &-cta {
-      padding-top: .5rem;
       width: 100%;
 
       &-link {
         background-color: white;
         color: black;
         display: block;
-        padding: 1rem;
+        font-family: proxima-nova-condensed, sans-serif;
+        font-size: .8rem;
+        line-height: 1;
+        padding: .8rem;
         text-align: center;
         text-transform: uppercase;
+
+        @include hover {
+          color: green;
+          text-decoration: none;
+        }
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1rem;
+          padding: 1rem;
+        }
       }
     }
   }

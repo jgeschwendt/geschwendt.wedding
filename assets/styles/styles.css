@@ -268,7 +268,14 @@ template {
     opacity: 1; } }
 
 .app-shell {
-  animation: app-shell-loader 2s ease-in 0s 1 normal forwards; }
+  animation: app-shell-loader 2s ease-in 0s 1 normal forwards;
+  max-width: 1440px;
+  margin: auto; }
+
+.main {
+  width: 100%;
+  min-height: 10rem;
+  background-color: white; }
 
 .jk-aspect-ratio-target {
   width: 100%;
@@ -302,7 +309,9 @@ template {
 .jk-hero-box {
   color: white;
   display: block;
-  line-height: 1; }
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
   .jk-hero-box-info {
     align-items: center;
     display: flex;
@@ -311,29 +320,65 @@ template {
     text-transform: uppercase; }
     .jk-hero-box-info-item {
       font-family: proxima-nova-condensed, sans-serif;
-      font-size: 1.5rem; }
+      font-size: .8rem;
+      margin-bottom: .125rem; }
+      @media (min-width: 576px) {
+        .jk-hero-box-info-item {
+          font-size: 1rem; } }
+      @media (min-width: 768px) {
+        .jk-hero-box-info-item {
+          font-size: 1.5rem; } }
   .jk-hero-box-names {
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: .25rem; }
     .jk-hero-box-names-joshua, .jk-hero-box-names-kaitlin {
-      font-size: 5rem;
+      font-size: 1.875rem;
       text-transform: uppercase;
       font-family: linotype-didot-headline, serif; }
+      @media (min-width: 576px) {
+        .jk-hero-box-names-joshua, .jk-hero-box-names-kaitlin {
+          font-size: 3rem; } }
+      @media (min-width: 768px) {
+        .jk-hero-box-names-joshua, .jk-hero-box-names-kaitlin {
+          font-size: 4.5rem; } }
     .jk-hero-box-names-and {
       font-family: beloved-script, sans-serif;
-      font-size: 4rem;
-      margin-left: 1rem;
-      margin-right: 1rem; }
+      font-size: 1.5rem;
+      margin-left: .25rem;
+      margin-right: .25rem; }
+      @media (min-width: 576px) {
+        .jk-hero-box-names-and {
+          font-size: 2.5rem;
+          margin-left: .5rem;
+          margin-right: .5rem; } }
+      @media (min-width: 768px) {
+        .jk-hero-box-names-and {
+          font-size: 3.5rem;
+          margin-left: .75rem;
+          margin-right: .75rem; } }
   .jk-hero-box-cta {
-    padding-top: .5rem;
     width: 100%; }
     .jk-hero-box-cta-link {
       background-color: white;
       color: black;
       display: block;
-      padding: 1rem;
+      font-family: proxima-nova-condensed, sans-serif;
+      font-size: .8rem;
+      line-height: 1;
+      padding: .8rem;
       text-align: center;
       text-transform: uppercase; }
+      .jk-hero-box-cta-link:hover {
+        color: green;
+        text-decoration: none; }
+      @media (min-width: 576px) {
+        .jk-hero-box-cta-link {
+          font-size: 1rem;
+          padding: 1rem; } }
+
+body {
+  background-color: #efefef; }
 

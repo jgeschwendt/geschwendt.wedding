@@ -9,4 +9,12 @@
 
 .app-shell {
   animation: app-shell-loader 2s ease-in 0s 1 normal forwards;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.main {
+  width: 100%;
+  min-height: 10rem;
+  background-color: white;
 }
