@@ -1,0 +1,58 @@
+.jk-details {
+  padding-top: 4rem;
+
+  &-title {
+    font-family: beloved-script, sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-list {
+    display: block;
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    margin: auto;
+    width: 50%;
+  }
+
+  &-image {
+    background-color: #ddd;
+    display: block;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    padding-top: 50%;
+    width: 50%;
+  }
+
+  &-info {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50%;
+
+    &-title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &-text {
+      font-size: 1.25rem;
+    }
+
+    &-address {
+      font-size: 1.25rem;
+    }
+
+    &-link {
+      font-size: 1.25rem;
+    }
+  }
+}

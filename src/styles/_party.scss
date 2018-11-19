@@ -1,0 +1,38 @@
+.jk-party {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  &-title {
+    font-family: beloved-script, sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-list {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  &-person {
+    margin-bottom: 2rem;
+
+    &-image {
+      background-color: #ddd;
+      margin-bottom: 1rem;
+      padding-top: 100%;
+      width: 100%;
+    }
+
+    &-name {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -3,10 +3,18 @@
 @import './styles/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/grid';
 
 @import './styles/app-shell';
+@import './styles/details';
+@import './styles/footer';
 @import './styles/hero';
+@import './styles/party';
+@import './styles/registry';
+@import './styles/story';
+
 
 body {
   background-color: #efefef;
+  font-family: proxima-nova-condensed, sans-serif;
 }
