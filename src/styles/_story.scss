@@ -5,11 +5,91 @@
   padding-bottom: 8rem;
   padding-top: 8rem;
 
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
   &-title {
     font-family: beloved-script, sans-serif;
     font-size: 5rem;
     font-weight: 300;
     text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-gallery {
+    margin-bottom: 2rem;
+
+    &-lg {
+      padding-top: 100%;
+      position: relative;
+      width: 100%;
+
+      @include media-breakpoint-up(sm) {
+        padding-top: 50%;
+        width: 2 / 3 * 100%;
+      }
+    }
+
+    &-sm {
+      display:none;
+
+      @include media-breakpoint-up(sm) {
+        display: block;
+        padding-top: 50%;
+        position: relative;
+        width: 1 / 3 * 100%;
+      }
+    }
+
+    &-image {
+      background-color: #ccc;
+      background-position: 50% 0%;
+      background-size: cover;
+      bottom: .5rem;
+      left: .5rem;
+      position: absolute;
+      right: .5rem;
+      top: .5rem;
+
+      @include media-breakpoint-up(sm) {
+        bottom: .5rem;
+        left: .5rem;
+        right: .5rem;
+        top: .5rem;
+      }
+    }
+
+    &-square {
+      margin-bottom: 2rem;
+      padding-top: 100%;
+      position: relative;
+      width: 100%;
+
+      &-image {
+        background-color: #ccc;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &-how-we-met-title,
+  &-the-proposal-title,
+  &-what-they-love-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &-how-we-met-text,
+  &-the-proposal-text,
+  &-what-they-love-text {
+    font-size: 1.25rem;
     margin-bottom: 4rem;
   }
 }
