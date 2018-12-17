@@ -1,9 +1,11 @@
 .jk-registry {
   background-color: #5d786d;
   color: white;
+  margin-bottom: 8rem;
   margin-top: 8rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   padding-top: 8rem;
+  text-align: center;
 
   &-title {
     font-family: beloved-script, sans-serif;
@@ -16,8 +18,45 @@
   &-text {
     font-size: 1.25rem;
     margin: auto;
+    margin-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
+  }
+
+  &-cta {
+    padding: 0 1rem;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      padding: unset;
+      width: auto;
+    }
+  }
+
+  &-link {
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+    width: 100%;
+
+    @include hover {
+      color: #fff;
+      background-color: #333;
+      transition: background-color 200ms ease-in, color 200ms ease-in;
+    }
+
+    @include media-breakpoint-up(sm) {
+      min-width: 18rem;
+      width: auto;
+    }
   }
 }

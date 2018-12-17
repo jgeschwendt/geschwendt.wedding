@@ -1,5 +1,6 @@
 .jk-details {
-  padding-top: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 
   &-title {
     font-family: beloved-script, sans-serif;
@@ -55,6 +56,7 @@
     }
 
     &-title {
+      font-family: 'Barlow Condensed', sans-serif;
       font-size: 1.5rem;
       text-transform: uppercase;
       font-weight: 500;
@@ -66,6 +68,10 @@
 
     &-address {
       font-size: 1.25rem;
+
+      b {
+        font-weight: 500;
+      }
     }
 
     &-link {

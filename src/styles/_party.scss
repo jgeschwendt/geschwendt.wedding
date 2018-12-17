@@ -1,6 +1,5 @@
 .jk-party {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin: 8rem auto;
 
   &-title {
     font-family: beloved-script, sans-serif;
@@ -11,8 +10,8 @@
   }
 
   &-list {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   &-person {
@@ -28,13 +27,16 @@
     }
 
     &-name {
+      font-family: 'Barlow Condensed', sans-serif;
       font-size: 1.5rem;
       font-weight: 500;
+      margin-bottom: .25rem;
       text-transform: uppercase;
     }
 
     &-text {
       font-size: 1.25rem;
+      line-height: 1.35;
     }
   }
 }
