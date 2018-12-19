@@ -1,0 +1,39 @@
+.jk-footer {
+  background-color: #333;
+  display: block;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
+  }
+
+  &-link {
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: auto;
+    padding: .5rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 200ms ease-out, color 200ms ease-out, outline 200ms ease-out;
+    width: 100%;
+    outline: 2px solid #333;
+
+    @include hover {
+      outline: 2px solid #fff;
+      color: #fff;
+      background-color: #333;
+      transition: background-color 200ms ease-in, color 200ms ease-in, outline 200ms ease-in;
+    }
+
+    @include media-breakpoint-up(sm) {
+      min-width: 36rem;
+      width: auto;
+    }
+  }
+}

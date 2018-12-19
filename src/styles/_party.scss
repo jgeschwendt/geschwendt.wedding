@@ -1,0 +1,42 @@
+.jk-party {
+  margin: 8rem auto;
+
+  &-title {
+    font-family: beloved-script, sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-list {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  &-person {
+    margin-bottom: 2rem;
+
+    &-image {
+      background-color: #ddd;
+      background-position: 50% 0%;
+      background-size: cover;
+      margin-bottom: 1rem;
+      padding-top: 100%;
+      width: 100%;
+    }
+
+    &-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: .25rem;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      font-size: 1.25rem;
+      line-height: 1.35;
+    }
+  }
+}
